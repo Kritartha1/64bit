@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import Schedule from './components/Schedule';
+import MainNew from './components/MainNew';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
        <Route path='/signup' element={<Register/>}/>
        <Route path='/schedule' element={<Schedule/>}/>
        <Route path='/interview' element={<Main/>}/>
+       <Route path="/new" element={<MainNew/>}/>
      </Routes>
      </BrowserRouter>
     </div>

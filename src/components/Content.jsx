@@ -10,9 +10,9 @@ const Content=()=>{
                     <button className="ml-12 px-6 py-2 rounded-full text-white text-lg border-white border-2">Join Interview</button>
                 </div>              
             </div>
-            <div className="ml-48 w-5/12">
-                <img src="https://th.bing.com/th/id/OIP.Kxo6IQfCQCd1I-1FwAYRvwAAAA?rs=1&pid=ImgDetMain" className="rounded-xl"/>   
-            </div>
+            
+                <img src="https://th.bing.com/th/id/OIP.Kxo6IQfCQCd1I-1FwAYRvwAAAA?rs=1&pid=ImgDetMain" className="rounded-xl ml-12"/>   
+           
         </div>
     )
 }

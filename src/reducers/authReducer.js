@@ -10,6 +10,7 @@ export const registerUser=createAsyncThunk("registerUser", async(data,{rejectWit
     });
     try{
         const result=await response.json();
+        localStorage.setItem("signup",result.success)
         console.log(result);
         return result;
     } catch(error){

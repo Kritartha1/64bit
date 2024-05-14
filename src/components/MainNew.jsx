@@ -105,7 +105,7 @@ const MainNew=()=> {
 
       <div className="bg-white-500 justify-between basis-2/4 h-128 my-auto  flex flex-col my-2  ">
         <div className="min-h-60 h-60 w-96 min-w-96 mx-auto " style={{background:"black"}}>
-        <Webcam audio={false}  ref={webcamRef} className="w-full object-contain h-full"/>
+        <Webcam audio={false}  ref={webcamRef} className="w-full object-cover h-full"/>
           
         </div>
         <div className="mt-0.5 min-h-60 h-60 w-96 min-w-96 mx-auto" style={{background:"brown"}}>
