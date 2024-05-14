@@ -7,9 +7,16 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { loginUser } from "../reducers/authReducer";
 const Login=()=>{
-    const handleSubmit=()=>{
-
+  const [data,setData]=useState({});
+  const dispatch=useDispatch();
+  const loginResponse=useSelector((state)=>state.auth.loginData);
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        dispatch(loginUser(data));
     }
     return(
         <div className="w-full h-screen bg-gradient-to-br from-[#282f54] to-[#422f66]">
@@ -32,6 +39,7 @@ const Login=()=>{
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  onChange={(e)=>setData({...data,[e.target.name]:e.target.value})}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -43,6 +51,7 @@ const Login=()=>{
                   type="password"
                   id="password"
                   autoComplete="new-password"
+                  onChange={(e)=>setData({...data,[e.target.name]:e.target.value})}
                 />
               </Grid>
              
@@ -55,6 +64,8 @@ const Login=()=>{
             >
               Sign In
             </Button>
+            {loginResponse.success ? 
+            <p className="text-green-600">{loginResponse.message}</p> : <p className="text-red-600">{loginResponse.message}</p>}
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link to="/signup" variant="body2" className="underline text-sky-600">

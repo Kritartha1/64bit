@@ -6,10 +6,17 @@ import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
+import {registerUser} from "../reducers/authReducer"
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 const Register=()=>{
-    const handleSubmit=()=>{
-
+  const dispatch=useDispatch();
+  const [data,setData]=useState({});
+  const signupResponse=useSelector((state)=>state.auth.user);
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        dispatch(registerUser(data));
     }
     return(
         <div className="w-full h-screen bg-gradient-to-br from-[#282f54] to-[#422f66]">
@@ -32,6 +39,7 @@ const Register=()=>{
                   id="firstName"
                   label="First Name"
                   autoFocus 
+                  onChange={(e)=>setData({...data,[e.target.name]:e.target.value})}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -42,6 +50,7 @@ const Register=()=>{
                   label="Last Name"
                   name="lastName"
                   autoComplete="family-name"
+                  onChange={(e)=>setData({...data,[e.target.name]:e.target.value})}
                 />
               </Grid>
           <Grid item xs={12}>
@@ -52,6 +61,7 @@ const Register=()=>{
               label="Email Address"
               name="email"
               autoComplete="email"
+              onChange={(e)=>setData({...data,[e.target.name]:e.target.value})}
             />
           </Grid>
           <Grid item xs={12}>
@@ -63,6 +73,7 @@ const Register=()=>{
               type="password"
               id="password"
               autoComplete="new-password"
+              onChange={(e)=>setData({...data,[e.target.name]:e.target.value})}
             />
           </Grid>
          
@@ -75,6 +86,8 @@ const Register=()=>{
         >
           Sign Up
         </Button>
+        {signupResponse.success ? 
+            <p className="text-green-600">{signupResponse.message}</p> : <p className="text-red-600">{signupResponse.message}</p>}
         <Grid container justifyContent="flex-end">
           <Grid item>
             <Link to="/login" variant="body2" className="text-sky-600 underline">
