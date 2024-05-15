@@ -191,7 +191,181 @@ const MainNew=()=> {
 
       </div>
       <div className="bg-black-500  relative justify-around h-128 basis-2/4 flex flex-col  my-auto mx-auto " >
-        <div className="rounded h-full lg:w-120 lg:mx-auto max-lg:w-96 max-[782px]:mt-4 z-10 bg-[#2A2D3F]" ></div>
+
+
+        <div className="overflow-y-hidden flex flex-col rounded h-full lg:w-120 lg:mx-auto max-lg:w-96 max-[782px]:mt-4 z-10 bg-[#2A2D3F]" >
+
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1 '>
+              Hello! guys
+          </div>
+
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+          <div className='bg-white mt-1'>
+              Hello! guys
+          </div>
+
+        </div>
         {/* <div className='absolute blur-3xl w-[150px] h-[150px] bg-[#80BD8D] -top-4 left-[2.625rem] '></div> */}
         <div className='absolute blur-3xl w-[150px] h-[150px] bg-[#80BD8D] -top-4 right-[2.625rem] '></div>
         {/* <div className='absolute blur-3xl w-[150px] h-[150px] bg-[#80BD8D] -bottom-4 left-[2.625rem]  '></div> */}
