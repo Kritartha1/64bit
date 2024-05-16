@@ -117,6 +117,8 @@ const MainNew=()=> {
     setEditable(true);
   }
 
+  // const enableWebcam = () => this.setState({ webcamEnabled: true });
+
 
   return (
     <div className='relative  z-10 flex flex-row flex-wrap h-screen  justify-around bg-gradient-to-br  bg-[#282F54] overflow-scroll' >
@@ -127,7 +129,11 @@ const MainNew=()=> {
 
 
         <div className="relative rounded min-h-60 h-60 w-96 min-w-96 mx-auto " style={{background:"black"}}>
-        <Webcam audio={false}  ref={webcamRef} className="w-full object-cover h-full"/>
+
+        {
+          cam===1?<Webcam audio={false}   ref={webcamRef} className="w-full object-cover h-full"/>:<div></div>
+        }
+        
 
         <div className='absolute flex flex-inline bottom-3 left-[43%]'>
 
