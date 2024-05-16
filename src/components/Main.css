@@ -1,0 +1,7 @@
+.customScrollNav{
+    overflow-y: scroll;
+}
+
+.customScrollNav:hover::-webkit-scrollbar{
+    display: none;
+}

@@ -6,6 +6,7 @@ import { AudioRecorder, useAudioRecorder } from 'react-audio-voice-recorder';
 import Navbar from "./Navbar";
 import {TextField,Button} from "@mui/material"
 import { TextareaAutosize } from '@mui/base/TextareaAutosize';
+import './Main.css'
 
 const MainNew=()=> {
 
@@ -193,7 +194,7 @@ const MainNew=()=> {
       <div className="bg-black-500  relative justify-around h-128 basis-2/4 flex flex-col  my-auto mx-auto " >
 
 
-        <div className="overflow-y-hidden flex flex-col rounded h-full lg:w-120 lg:mx-auto max-lg:w-96 max-[782px]:mt-4 z-10 bg-[#2A2D3F]" >
+        <div className="customScrollNav flex flex-col rounded h-full lg:w-120 lg:mx-auto max-lg:w-96 max-[782px]:mt-4 z-10 bg-[#2A2D3F]" >
 
           <div className='bg-white '>
               Hello! guys
