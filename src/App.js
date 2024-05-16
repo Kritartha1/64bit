@@ -18,8 +18,8 @@ function App() {
        <Route path='/login' element={<Login/>}/>
        <Route path='/signup' element={<Register/>}/>
        <Route path='/schedule' element={<Schedule/>}/>
-       <Route path='/interview' element={<Main/>}/>
-       <Route path="/new" element={<MainNew/>}/>
+       <Route path='/interview' element={<MainNew/>}/>
+       {/* <Route path="/new" element={<MainNew/>}/> */}
      </Routes>
      </BrowserRouter>
     </div>
