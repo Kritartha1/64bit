@@ -183,34 +183,33 @@ const Main=()=>{
             <div className="w-full h-5/6 p-1">
               <form method="POST" onSubmit={handleSubmit} className="mt-6">
               <TextField
-          id="multiline-static"
-         
-          multiline
-          rows={4}
-          defaultValue="Question"
-          disabled
-          className="bg-white mt-24 w-11/12 rounded-xl"
-        />
-        <div className="mt-10">
-         <TextField
-          id="multiline-static"
-          value={recognizedText}
-          multiline
-          rows={4}
-          placeholder="Your Answer..."
-          disabled={!editable}
-          className="bg-white w-11/12 rounded-xl mt-12"
-        /></div>
+                  id="multiline-static"
+                  multiline
+                  rows={4}
+                  defaultValue="Question"
+                  disabled
+                  className="bg-white mt-24 w-11/12 rounded-xl"
+              />
+          <div className="mt-10">
+            <TextField
+              id="multiline-static"
+              value={recognizedText}
+              multiline
+              rows={4}
+              placeholder="Your Answer..."
+              editable
+              disabled={!editable}
+              className="bg-white w-11/12 rounded-xl mt-12 text-black"
+            />
+          </div>
         <div className="mt-6">
-         <Button variant="contained"className="" onClick={handleEdit}>Edit Answer</Button>
-         </div>
-
-         <div className="mt-8">
+           <Button variant="contained"className="" onClick={handleEdit}>Edit Answer</Button>
+        </div>
+        <div className="mt-8">
            <Button variant="contained" type="submit">Submit</Button>
-         </div>
+        </div>
               </form>
-            </div>
-          
+            </div>          
           </div>
         </div>
         </div>
