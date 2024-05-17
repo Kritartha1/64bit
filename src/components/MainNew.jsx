@@ -7,8 +7,12 @@ import Navbar from "./Navbar";
 import {TextField,Button} from "@mui/material"
 import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 import './Main.css'
+import SenderChat from './SenderChat';
+import ReceiverChat from './ReceiverChat';
 
 const MainNew=()=> {
+
+
 
   const webcamRef = useRef(null);
     const [isRecording, setIsRecording] = useState(false);
@@ -17,6 +21,8 @@ const MainNew=()=> {
   const [blob,setBlob]=useState([]);
   const [visible,setVisible]=useState(false);
   const [editable,setEditable]=useState(false);
+
+  const [edit,setEdit]=useState(false);
 
   const [mic,setMic]=useState(0);
   const [cam,setCam]=useState(0);
@@ -202,176 +208,15 @@ const MainNew=()=> {
 
         <div className="customScrollNav flex flex-col rounded h-full lg:w-120 lg:mx-auto max-lg:w-96 max-[782px]:mt-4 z-10 bg-[#2A2D3F]" >
 
-          <div className='bg-white '>
-              Hello! guys
-          </div>
+          <ReceiverChat Text={"dddf"}/>
+          <SenderChat Text={"dgjgyjgygyug uf"} editable={edit}/>
+          <ReceiverChat Text={"ddkhuuubugug  gug ug yg yu gdf"}/>
 
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
 
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
+          <SenderChat Text={"djkhun ih uh uh h u ug ug u uh u u hu uddf"}/>
+          <ReceiverChat Text={"dh dfdsf ds fhsd fh sif sd fs dfjsd hf dsf sd fh f dsfksdf kfjlkfdfdsf ldsj fksd fsd jfskdjfhjksdh fkjds fjhdsjh fksdhfjksd fkjshdf jh sdfjhsdjhf sdhfusdh fshd f dsf sdf sd fds fs df sdf ds fds f dsf sd fs df dsf s df dsf s df sdf sd fsd f sd fds fs df "}/>
 
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1 '>
-              Hello! guys
-          </div>
-
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-          <div className='bg-white mt-1'>
-              Hello! guys
-          </div>
-
+          
         </div>
         {/* <div className='absolute blur-3xl w-[150px] h-[150px] bg-[#80BD8D] -top-4 left-[2.625rem] '></div> */}
         <div className='absolute blur-3xl w-[150px] h-[150px] bg-[#80BD8D] -top-4 right-[2.625rem] '></div>
