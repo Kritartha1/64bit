@@ -15,24 +15,6 @@ const Content = () => {
                     </button>
                 </div>
             </div>
-            <div className="relative  basis-2/4 justify-center w-full min-[874px]:w-6/12 lg:w-auto mt-8 min-[874px]:mt-0 min-[874px]:ml-12 flex max-[874px]:w-full ">
-
-               
-                <img src={photo} className="z-10 absolute -scale-x-100  max-[874px]:relative  max-[874px]:top-[-1rem] top-[-6rem] rounded-xl" alt="Interview AI" />
-                <div className='z-0 absolute top-[30%] min-[874px]:left-[72px] max-[874px]:left-[20%] bg-[#D9D9D9] blur-3xl h-[10rem] w-[10rem]'></div>
-           
-
-                
-            
-            
-                
-                {/* <img src="https://th.bing.com/th/id/OIP.Kxo6IQfCQCd1I-1FwAYRvwAAAA?rs=1&pid=ImgDetMain" className="rounded-xl" alt="Interview AI" /> */}
-            </div>
-
-
-            <div className="mx-[29%] absolute w-[50%] h-[200px] bg-[#4756A5]/[79%] blur-3xl z-0"></div>
-
-            <div className="mx-[29%] top-[59%]  absolute w-[50%] h-[300px] bg-[#DF33E2]/[31%] blur-3xl z-0"></div>
 
         </div>
     );
