@@ -1,13 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import ExampleComponent from './components/Test';
-import Main from './components/Main';
-import Home from './components/Home';
+import Home from './homeScreen/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './components/Login';
-import Register from './components/Register';
-import Schedule from './components/Schedule';
-import MainNew from './components/MainNew';
+import Login from './authScreens/Login';
+import Register from './authScreens/Register';
+import Schedule from './scheduleScreen/Schedule';
+import MainNew from './interviewScreen/MainNew';
 
 
 function App() {

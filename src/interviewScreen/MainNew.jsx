@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { ReactMic } from "react-mic";
 import Webcam from "react-webcam";
 import { AudioRecorder, useAudioRecorder } from 'react-audio-voice-recorder';
-import Navbar from "./Navbar";
+import Navbar from '../components/Navbar';
 import {TextField,Button} from "@mui/material"
 import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 import './Main.css'

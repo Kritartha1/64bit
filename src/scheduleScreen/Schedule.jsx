@@ -1,6 +1,6 @@
 import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 const Schedule=()=>{
     const navigate=useNavigate();
     const handleChange=()=>{

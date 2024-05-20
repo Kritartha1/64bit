@@ -1,6 +1,6 @@
 import Content from "./Content";
-import Navbar from "./Navbar";
-import NewHomeBackgrounnd from "./newHome";
+import Navbar from "../components/Navbar";
+import NewHomeBackgrounnd from "../components/newHome";
 
 const Home=()=>{
     return(
