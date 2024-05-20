@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import photo from '../assets/hand.png';
+// import photo from '../assets/hand.png';
 
 const Content = () => {
     return (
@@ -18,7 +18,7 @@ const Content = () => {
             <div className="relative  basis-2/4 justify-center w-full min-[874px]:w-6/12 lg:w-auto mt-8 min-[874px]:mt-0 min-[874px]:ml-12 flex max-[874px]:w-full ">
 
                
-                <img src={photo} className="z-10 absolute -scale-x-100  max-[874px]:relative  max-[874px]:top-[-1rem] top-[-6rem] rounded-xl" alt="Interview AI" />
+                {/* <img src={photo} className="z-10 absolute -scale-x-100  max-[874px]:relative  max-[874px]:top-[-1rem] top-[-6rem] rounded-xl" alt="Interview AI" /> */}
                 <div className='z-0 absolute top-[30%] min-[874px]:left-[72px] max-[874px]:left-[20%] bg-[#D9D9D9] blur-3xl h-[10rem] w-[10rem]'></div>
            
 

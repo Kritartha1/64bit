@@ -14,7 +14,7 @@ const MainNew = () => {
   const [recognizedText, setRecognizedText] = useState('');
   const [speechRecognizer, setSpeechRecognizer] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
-  const [interviewTime, setInterviewTime] = useState(300); // Example interview duration in seconds
+  const [interviewTime, setInterviewTime] = useState(300); 
   const [timeLeft, setTimeLeft] = useState(interviewTime);
   const [showSpeakButton, setShowSpeakButton] = useState(true);
   const chatEndRef = useRef(null);
@@ -41,7 +41,8 @@ const MainNew = () => {
   const handleMic = () => setMic(1 - mic);
   const handleCam = () => setCam(1 - cam);
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async() => {
+    
     if (recognizedText.trim() !== '') {
       setMessages((prevMessages) => [
         ...prevMessages,
@@ -49,7 +50,6 @@ const MainNew = () => {
       ]);
       setRecognizedText('');
       setShowSpeakButton(true);
-      // Simulate bot response after user sends a message
       setTimeout(() => {
         setMessages((prevMessages) => [
           ...prevMessages,
@@ -114,12 +114,12 @@ const MainNew = () => {
     const lastUserMessageIndex = messages.findIndex((message) => message.from === 'user');
     if (lastUserMessageIndex !== -1) {
       setIsEditing(true);
-      setRecognizedText(messages[lastUserMessageIndex].text); // Set recognized text to the last user message
+      setRecognizedText(messages[lastUserMessageIndex].text); 
       setMessages((prevMessages) => {
         const editedMessages = [...prevMessages];
         editedMessages[lastUserMessageIndex] = {
           ...editedMessages[lastUserMessageIndex],
-          editable: true // Mark the message as editable
+          editable: true 
         };
         return editedMessages;
       });
@@ -130,9 +130,9 @@ const MainNew = () => {
     const lastUserMessageIndex = messages.findIndex((message) => message.editable === true);
     if (lastUserMessageIndex !== -1) {
       setMessages((prevMessages) => [
-        ...prevMessages.slice(0, lastUserMessageIndex), // Keep messages before the edited one
-        { ...prevMessages[lastUserMessageIndex], text: recognizedText, editable: undefined }, // Update the edited message
-        ...prevMessages.slice(lastUserMessageIndex + 1) // Keep messages after the edited one
+        ...prevMessages.slice(0, lastUserMessageIndex), 
+        { ...prevMessages[lastUserMessageIndex], text: recognizedText, editable: undefined }, 
+        ...prevMessages.slice(lastUserMessageIndex + 1) 
       ]);
       setIsEditing(false);
     }

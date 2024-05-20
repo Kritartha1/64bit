@@ -8,6 +8,8 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Schedule from './components/Schedule';
 import MainNew from './components/MainNew';
+import NewAuth from './components/NewAuth';
+import NewContent from './components/NewContent';
 
 function App() {
   return (
@@ -15,11 +17,11 @@ function App() {
      <BrowserRouter>
      <Routes>
        <Route path='' element={<Home/>}/>
-       <Route path='/login' element={<Login/>}/>
-       <Route path='/signup' element={<Register/>}/>
+       <Route path='/login' element={<NewAuth/>}/>
        <Route path='/schedule' element={<Schedule/>}/>
-       <Route path='/interview' element={<MainNew/>}/>
-       {/* <Route path="/new" element={<MainNew/>}/> */}
+       <Route path='/interview' element={<Main/>}/>
+       <Route path="/newAuth" element={<NewAuth/>}/>
+       <Route path='/newContent' element={<NewContent/>}/>
      </Routes>
      </BrowserRouter>
     </div>
