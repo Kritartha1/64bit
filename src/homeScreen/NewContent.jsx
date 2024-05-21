@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Footer from "./Footer";
 
 const NewContent=()=>{
     const [show1,setShow1]=useState(true);
@@ -38,7 +37,6 @@ return(
                 </div>
             </div>
         </div>
-    <Footer/>
     </div>
 )
 }

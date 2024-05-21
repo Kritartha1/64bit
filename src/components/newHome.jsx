@@ -14,7 +14,7 @@ const NewHomeBackgrounnd=()=> {
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
-        target = {x: width/2, y: height/2};
+        target = {x: (2.65*width)/4, y: height/2};
 
         largeHeader = document.getElementById('large-header');
 
@@ -38,7 +38,7 @@ const NewHomeBackgrounnd=()=> {
         for(var i = 0; i < points.length; i++) {
             var closest = [];
             var p1 = points[i];
-            var closestCount =3;
+            var closestCount =4;
             for(var j = 0; j < points.length; j++) {
                 var p2 = points[j]
                 if(!(p1 == p2)) {
@@ -75,7 +75,7 @@ const NewHomeBackgrounnd=()=> {
     // Event handling
     function addListeners() {
         if(!('ontouchstart' in window)) {
-            window.addEventListener('mousemove', mouseMove);
+           // window.addEventListener('mousemove', mouseMove);
         }
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
@@ -143,6 +143,7 @@ const NewHomeBackgrounnd=()=> {
     }
 
     function shiftPoint(p) {
+        
         TweenLite.to(p, 3+1*Math.random(), {x:p.originX+Math.random()*100,
             y: p.originY+Math.random()*100, ease:Circ.easeInOut,
             onComplete: function() {
@@ -198,7 +199,7 @@ const NewHomeBackgrounnd=()=> {
 
     return(
             <div id="large-header" className="large-header w-screen h-screen">
-                <canvas id="demo-canvas"></canvas>
+                <canvas id="demo-canvas" className='z-50'></canvas>
             </div>
     )
 }

@@ -12,7 +12,7 @@ body {
 }
 
 input,
-button {
+btn {
   border: none;
   outline: none;
   background: none;
@@ -55,7 +55,7 @@ button {
   transition: transform 1.2s ease-in-out;
 }
 
-button {
+btn {
   display: block;
   margin: 0 auto;
   width: 260px;
